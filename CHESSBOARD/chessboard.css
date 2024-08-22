@@ -1,0 +1,26 @@
+.Chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 80px); /* 8 columns of 80px each */
+    grid-template-rows: repeat(8, 80px); /* 8 rows of 80px each */
+    width: 640px; /* Total width of the chessboard */
+    height: 640px; /* Total height of the chessboard */
+    margin: 20px auto; /* Centered horizontally with margin on top and bottom */
+    border: 25px solid #333; /* Border around the chessboard */
+}
+
+.white, .black {
+    font-size: 50px; /* Size of the chess pieces */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white {
+    background-color: #fff; /* White square color */
+}
+
+.black {
+    background-color: #999; /* Black square color */
+}
+

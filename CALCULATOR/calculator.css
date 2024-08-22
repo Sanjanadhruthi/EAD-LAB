@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+.header {
+    position: absolute; /* Position header at the top left corner */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.5); /* Optional background for better readability */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.calculator {
+    border: 5px solid #717377;
+    border-radius: 16px;
+    background: #2c2c2c;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    padding: 30px;
+    width: 400px; /* Width of the calculator */
+    outline: 4px solid #ff9f3d; /* Outline for additional emphasis */
+    outline-offset: -8px; /* Adjusts the position of the outline */
+    margin-top: 68px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #333;
+    color: #fff;
+    font-size: 32px;
+    text-align: right;
+    border-radius: 8px;
+    box-shadow: inset 0px 3px 10px rgba(84, 84, 84, 0.2);
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    border: none;
+    height: 60px;
+    border-radius: 8px;
+    background: #fb7c14;
+    color: #ffffff;
+    font-size: 24px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff9f3d;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+button.operator {
+    background-color: #6dee0a;
+    color: #333;
+}
+
+button.operator:hover {
+    background-color: #5bd00b;
+}
+
+button.zero {
+    grid-column: span 2; /* Span across two columns */
+}
+
+
